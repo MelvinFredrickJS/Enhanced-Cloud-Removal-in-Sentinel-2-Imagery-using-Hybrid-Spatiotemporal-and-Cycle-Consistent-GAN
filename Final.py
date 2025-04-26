@@ -10,7 +10,7 @@ import numpy as np
 from glob import glob
 import itertools
 
-# Set random seed for reproducibility
+# Set random seed  reproducibility
 torch.manual_seed(42)
 random.seed(42)
 np.random.seed(42)
