@@ -10,7 +10,7 @@ import numpy as np
 from glob import glob
 import itertools
 
-# Set random seed  reproducibility
+# Set randomseed  reproducibility
 torch.manual_seed(42)
 random.seed(42)
 np.random.seed(42)
@@ -23,7 +23,7 @@ OUTPUT_DIR = r'C:\\Users\\Joseph\Desktop\\cloud removal\\res'
 # Create output directory if it doesn't exist
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Parameters
+#Parameters
 IMG_HEIGHT = 256
 IMG_WIDTH = 256
 CHANNELS = 3
@@ -35,7 +35,7 @@ LR = 0.0002
 BETA1 = 0.5
 BETA2 = 0.999
 
-# Custom Dataset
+#Custom Dataset
 class SatelliteDataset(Dataset):
     def _init_(self, cloudy_dir, cloud_free_dir):
         self.cloudy_paths = sorted(glob(os.path.join(cloudy_dir, '*.png')))
